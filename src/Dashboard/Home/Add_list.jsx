@@ -32,7 +32,7 @@ function Add_list() {
 
         console.log(userObj);
 
-        fetch('', {
+        fetch('http://localhost:5000/task', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ function Add_list() {
                 <div className="card-body ">
                     <form onSubmit={handleUser}>
                     <div className="form-control pb-2">
-                                <input type="text" name="name" placeholder="Title" className="input input-bordered" />
+                                <input type="text" name="title" placeholder="Title" className="input input-bordered" />
                             </div>
                         <div className="md:grid grid-cols-2 gap-4 space-y-4 md:space-y-0">
                            
