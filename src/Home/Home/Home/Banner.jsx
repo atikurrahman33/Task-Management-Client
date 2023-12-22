@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Banner = () => {
@@ -9,7 +10,7 @@ const Banner = () => {
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold  text-orange-500">Manage Your Task</h1>
       <p className="mb-5 ">Task management involves organizing and prioritizing activities to achieve goals efficiently. It includes setting goals, breaking them into manageable tasks, prioritizing, and scheduling. Effective communication, task tracking, and delegation are crucial for individual and team productivity, with regular reviews ensuring adaptability and success.</p>
-      <button className="btn btn-primary bg-red-700">Let’s Explore</button>
+      <Link to={'/login'}><button className="btn btn-primary bg-red-700">Let’s Explore</button></Link>
     </div>
   </div>
 </div>
