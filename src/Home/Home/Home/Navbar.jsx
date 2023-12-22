@@ -64,6 +64,16 @@ const Navbar = () => {
                                     Review
                                 </NavLink>
                             </li>
+                            <li>
+                                <NavLink
+                                    to="/faq"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-pink-800 font-bold underline" : ""
+                                    }
+                                >
+                                    FAQ
+                                </NavLink>
+                            </li>
                           
                         </ul>
                     </div>
@@ -97,6 +107,16 @@ const Navbar = () => {
                                 Review
                             </NavLink>
                         </li>
+                        <li>
+                                <NavLink
+                                    to="/faq"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "text-pink-800 font-bold underline" : ""
+                                    }
+                                >
+                                    FAQ
+                                </NavLink>
+                            </li>
 
                     </ul>
                 </div>
